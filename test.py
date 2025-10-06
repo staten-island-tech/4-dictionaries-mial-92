@@ -11,7 +11,7 @@
 for i in range(0, len(MiasDealerShop)):
     print(MiasDealerShop[i]["Item"])
 Cart = input("What would you like to buy?") """
-
+""" 
 def language(x): 
     x = x.lower()
     scount = x.count("s")
@@ -22,4 +22,12 @@ def language(x):
         print("French")
     else:
         print("huh")
-language("ella")
+language("stinky")
+ """
+def parkingspace(x):
+    ccount = x.count("C")
+    CCcount = x.count("CC") 
+    CCcount = CCcount * 2
+    print(ccount-CCcount)
+
+parkingspace("CC..C.CC.C.CC.C.")
