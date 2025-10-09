@@ -1,4 +1,4 @@
-MiasDealerShop = [
+""" MiasDealerShop = [
     {"Item": "1. ella's poopy shoes", "price": 0.56, "description": "During a fire drill, third period, Ella step into some not so good, solid brown substance. It was unfortunate But thankfully she was able to wash it off! However, there may be some residue in the creases of her shoes."},                                                           
     {"Item": "2. olivia's cat's hairballs", "price": 4.99, "description": "Olivia is allergic to cats, however, she still has two very adorable cats, Ollie and Ellie! Her cats are kinda hairy and she just has a bunch of hair stuck around her home."},
     {"Item": "3. BigBackLiver's Gooner Fanfic(resale)", "price": 350.00, "description": "Collaboration with BigBack Liver's Library!! Buy now before it's too late..."},
@@ -24,12 +24,10 @@ while consent == True:
         Cart = input("What else would you like to buy?")
         consent = True
     if consent == "no":
-        print("Ok! Time to check out.")
+        print("Ok! Time to check out.") 
+ """
 
-
-
-""" 
-def language(x): 
+""" def language(x): 
     x = x.lower()
     scount = x.count("s")
     scount = x.count("S")
@@ -64,7 +62,7 @@ def parkingspace(x):
     CCcount = CCcount * 2
     print(ccount-CCcount)
 
-parkingspace("CC..C.CC.C.CC.C.") """
+parkingspace("CC..C.CC.C.CC.C.") 
 
 def spaces(n,y,t):
     occupied = 0
@@ -73,4 +71,17 @@ def spaces(n,y,t):
             occupied += 1 
     return(occupied)
 
-print(spaces(5, "CCC..", ".C..C"))
+print(spaces(5, "CCC..", ".C..C")) """
+
+def honicount():
+    honi = 0
+    for i in range:
+        if i == "H":
+            honi += 1 
+            if i == "O":
+                honi += 1
+                if i == "N":
+                    honi += 1
+                    if i == "I":
+                        honi += 1
+print(honicount)
