@@ -17,11 +17,12 @@ consent = True
 while consent == True:
     for item in MiasDealerShop:
         if Cart in item["Item"]:
-            print(f"{["Item"]} has been added to your cart")
-    
-    consent = input("Would you like to add more into your cart? ")
-    if consent == "yes":
-        Cart = input("What else would you like to buy?")
-        consent = True
-    if consent == "no":
-        print("Ok! Time to check out.") 
+            print(f"{item["Item"]} has been added to your cart")
+            consent = input("Would you like to add more into your cart? ")
+            if consent == "yes":
+                Cart = input("What else would you like to buy?")
+                Cart = Cart + 1
+                consent = True
+            if consent == "no":
+                print("Ok! Time to check out.") 
+    print(f"You are purchasing these items: ")
