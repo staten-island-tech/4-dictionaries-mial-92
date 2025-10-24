@@ -39,30 +39,30 @@ print("Thanks for shoppng with MiasDealerShop. Have a great day!")
 
  """
 
-
+""" 
 def casino(q , f , s , t):
     plays = 0
-    f = 0
-    s = 0
-    t = 0
-    while q > 0:
+    while q >= 1:
         f += 1
         plays += 1
         q = q - 1
         if f == 35:
             q = q + 30
-        elif s == 100:
-            q = q + 60 
-            t += 1
+        if q >= 1:
+            s += 1
             plays += 1
             q = q - 1
-        elif t == 10:
-            q = q = 9
-        
-         
-    print(f"Martha can play her gambling machines {plays} times before going broke.")
+        if s == 100:
+            q = q + 60
+        if q >= 1:
+            t += 1 
+            plays += 1
+            q = q - 1
+            if t == 10:
+                q = q + 9
+        print(f"Martha can play her gambling machines {plays} times before going broke.")
 
-casino(48, 3, 10, 4)
+casino(48, 3, 10, 4) """
 
 """    s += 1 
             plays += 1
@@ -75,3 +75,31 @@ casino(48, 3, 10, 4)
             q = q - 1
         if t == 10:
             q = q + 9 """
+
+
+def casino(q , f , s , t):
+    plays = 0
+    while q >= 1:
+        f += 1
+        plays += 1
+        q = q - 1
+        if f == 35:
+            q = q + 30
+            if q >= 1:
+                s += 1
+                plays += 1
+                q = q - 1
+            else: 
+                print(f"Martha can play her gambling machines {plays} times before going broke.")
+                if s == 100:
+                    q = q + 60
+                    if q >= 1:
+                        t += 1 
+                        plays += 1
+                        q = q - 1
+                    else:
+                        print(f"Martha can play her gambling machines {plays} times before going broke.")
+                        if t == 10:
+                            q = q + 9
+
+casino(48, 3, 10, 4)
