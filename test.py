@@ -1,4 +1,4 @@
-""" MiasDealerShop = [
+MiasDealerShop = [
     {"Item": "1. ella's poopy shoes", "Name": "ella's poopy shoes", "price": 0.56, "description": "During a fire drill, third period, Ella step into some not so good, solid brown substance. It was unfortunate But thankfully she was able to wash it off! However, there may be some residue in the creases of her shoes."},                                                           
     {"Item": "2. olivia's cat's hairballs", "Name": "olivia's cat's hairballs", "price": 4.99, "description": "Olivia is allergic to cats, however, she still has two very adorable cats, Ollie and Ellie! Her cats are kinda hairy and she just has a bunch of hair stuck around her home."},
     {"Item": "3. BigBackLiver's Gooner Fanfic(resale)", "Name": "BackLiver's Gooner Fanfic(resale)", "price": 350.00, "description": "Collaboration with BigBack Liver's Library!! Buy now before it's too late..."},
@@ -34,12 +34,14 @@ while consent == True:
 print(f"You are purchasing these items: {list} ")
 total = total * 1.08875
 rounded_total = round(total , 2)
-print(f"The total of your cart is going to be {rounded_total} with tax include")
+print(f"The total of your cart is going to be {rounded_total} with tax included.")
+input("Would you like to pay with cash or card?")
 print("Thanks for shoppng with MiasDealerShop. Have a great day!")
 
- """
 
 
+
+""" 
 def casino(q , f , s , t):
     plays = 0
     while q >= 1:
@@ -68,44 +70,4 @@ def casino(q , f , s , t):
         elif q == 0:
           break
     print(f"Martha can play her gambling machines {plays} times before going broke.")
-casino(77,4, 9, 3)
-
-"""    s += 1 
-            plays += 1
-            q = q - 1
-        if s == 100:
-                q = q + 60
-        else: 
-            t += 1
-            plays += 1
-            q = q - 1
-        if t == 10:
-            q = q + 9 """
-
-""" 
-def casino(q , f , s , t):
-    plays = 0
-    while q >= 1:
-        f += 1
-        plays += 1
-        q = q - 1
-        if f == 35:
-            q = q + 30
-            if q >= 1:
-                s += 1
-                plays += 1
-                q = q - 1
-            else: 
-                print(f"Martha can play her gambling machines {plays} times before going broke.")
-                if s == 100:
-                    q = q + 60
-                    if q >= 1:
-                        t += 1 
-                        plays += 1
-                        q = q - 1
-                    else:
-                        print(f"Martha can play her gambling machines {plays} times before going broke.")
-                        if t == 10:
-                            q = q + 9
-
-casino(48, 3, 10, 4) """
+casino(77, 4, 9, 3) """
